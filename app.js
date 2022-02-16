@@ -33,3 +33,37 @@ $(function(){
     }).slideUp();
   });
 });
+
+$(function(){
+  $('.box2').mouseover(function(){
+    $('.box2').css({'background-color':'#0000FF'});
+  });
+})
+
+$(function(){
+  $('.box2').mouseover(function(){
+    $('.box2').css({'background-color': '#0000FF'});
+  });
+  $('.box2').mouseout(function(){
+    $('.box2').css({'background-color': '#FF0000'});
+  });
+});
+
+// マウス乗せた
+// $(function(){
+//   $('.box2').mouseover(function(){
+//     $('.box2').addClass('box2-ext');
+//   });
+//   $('.box2').mouseout(function(){
+//     $('.box2').removeClass('box2-ext');
+//   });
+// });
+
+$(function(){
+  $('.box2').on('click', function(){
+    $('.box2').addClass('box2-ext');
+  });
+  $('.box2').mouseout(function(){
+    $('.box2').removeClass('box2-ext');
+  });
+});
